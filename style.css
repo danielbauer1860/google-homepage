@@ -1,0 +1,66 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "navleft nav navright"
+    ". content ."
+    ". . ."
+    ;
+}
+
+.content {
+    display: grid;
+    grid-area: content;
+    grid-template-areas:
+    "logo"
+    "searchbar"
+    "searchbuttons"
+    "info"  ;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.searchbar {
+    grid-area: searchbar;
+    justify-self: center;
+}
+
+.searchbuttons{
+    grid-area: searchbuttons;
+}
+
+.info{
+    grid-area: info;
+}
+
+.navleft{
+    grid-area: navleft;
+    justify-self: flex-start;
+}
+.navright{
+    grid-area: navright;
+    justify-self: flex-end;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+}
+
+li{
+    margin: 10px;
+}
+
+a{
+    color: black;
+}
+
+
+
